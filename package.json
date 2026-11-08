@@ -28,7 +28,7 @@
     "zod": "^3.23.8"
   },
   "devDependencies": {
-    "@biomejs/biome": "1.9.4",
+    "@biomejs/biome": "2.6.5",
     "@types/node": "^22.0.0",
     "esbuild": "^0.25.0",
     "tsc-rs": "^0.8.0",
