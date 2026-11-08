@@ -12,8 +12,8 @@ importers:
         specifier: ^1.0.0
         version: 1.2.12(zod@3.25.76)
       '@hono/node-server':
-        specifier: ^1.19.18
-        version: 1.19.18(hono@4.13.17)
+        specifier: ^2.1.6
+        version: 2.1.6(hono@4.13.17)
       '@openchannelprotocol/sdk':
         specifier: 0.1.0
         version: 0.1.0
@@ -458,11 +458,11 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@hono/node-server@1.19.18':
-    resolution: {integrity: sha512-609kppIP9GITS+EwPyB6Kiq8z2yXONaYD1VHpo7MMP9celRJYbkFr9KakJncHwK0EK/XYtlogqmrLchDv5HX5w==}
-    engines: {node: '>=18.14.1'}
+  '@hono/node-server@2.1.6':
+    resolution: {integrity: sha512-p/KH9MnfNcsm3sR6x4lNgm5j+QN4Et8srKredl9DZfXiyZ1UQ3aQ2YVpFLbqktYN5JI+DB+VZFKM2PqE5hLKjQ==}
+    engines: {node: '>=20'}
     peerDependencies:
-      hono: ^4
+      hono: ^4 || ^5.0.0-0
 
   '@jridgewell/sourcemap-codec@1.6.0':
     resolution: {integrity: sha512-T7jf+5zgsZHwNJ4lvQ7/aezbyk0nNX+zJVWpmHA7VYsEx7a7qr5Rg5IbtJFqkgze5Y2sruq1RUY8Q837Od7iFw==}
@@ -1246,7 +1246,7 @@ snapshots:
   '@esbuild/win32-x64@0.28.2':
     optional: true
 
-  '@hono/node-server@1.19.18(hono@4.13.17)':
+  '@hono/node-server@2.1.6(hono@4.13.17)':
     dependencies:
       hono: 4.13.17
 
