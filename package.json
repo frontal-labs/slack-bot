@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "@ai-sdk/anthropic": "^1.0.0",
-    "@hono/node-server": "^1.19.18",
+    "@hono/node-server": "^2.1.6",
     "@openchannelprotocol/sdk": "0.1.0",
     "@t3-oss/env-core": "^0.13.0",
     "ai": "^4.0.0",
