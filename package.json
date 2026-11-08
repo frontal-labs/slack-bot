@@ -19,7 +19,7 @@
     "size": "node scripts/size.mjs"
   },
   "dependencies": {
-    "@ai-sdk/anthropic": "^1.0.0",
+    "@ai-sdk/anthropic": "^4.0.97",
     "@hono/node-server": "^1.19.18",
     "@openchannelprotocol/sdk": "0.1.0",
     "@t3-oss/env-core": "^0.13.0",
