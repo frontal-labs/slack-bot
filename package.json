@@ -1,0 +1,39 @@
+{
+  "name": "slack-bot",
+  "version": "0.1.0",
+  "description": "Simple agent mock demo using ai-sdk and @openchannelprotocol/sdk for Slack",
+  "type": "module",
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "scripts": {
+    "dev": "tsx watch --env-file-if-exists=.env src/index.ts",
+    "build": "tsc-rs && esbuild src/index.ts --bundle --platform=node --format=esm --outfile=dist/index.js",
+    "start": "node --env-file-if-exists=.env dist/index.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc-rs --noEmit",
+    "lint": "ultracite lint src tests",
+    "format": "ultracite format src tests",
+    "check": "pnpm run typecheck && pnpm run lint && pnpm run test",
+    "size": "node scripts/size.mjs"
+  },
+  "dependencies": {
+    "@ai-sdk/anthropic": "^1.0.0",
+    "@hono/node-server": "^1.19.18",
+    "@openchannelprotocol/sdk": "0.1.0",
+    "@t3-oss/env-core": "^0.13.0",
+    "ai": "^4.0.0",
+    "hono": "^4.0.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@types/node": "^22.0.0",
+    "esbuild": "^0.25.0",
+    "tsc-rs": "^0.8.0",
+    "tsx": "^4.23.15",
+    "ultracite": "^4.0.0",
+    "vitest": "^3.0.0"
+  }
+}

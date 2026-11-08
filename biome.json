@@ -1,0 +1,22 @@
+{
+  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+  "extends": ["ultracite"],
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "double",
+      "trailingCommas": "all"
+    }
+  },
+  "overrides": [
+    {
+      "include": ["src/slack/channel.ts", "src/slack/transport.ts"],
+      "linter": {
+        "rules": {
+          "nursery": {
+            "noExportedImports": "off"
+          }
+        }
+      }
+    }
+  ]
+}
